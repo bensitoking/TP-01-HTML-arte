@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        background-color: #faebd7;
+    }
+    body{
+        background-color: rgb(99, 37, 22);
+    }
+    footer{
+        background-color: #faebd7;
+    }
+    h1{
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    label{
+        font-size: 22px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+    }
+    p{
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        padding-bottom: 60px;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .botonera{
+        display: flex;
+        gap: 250px;
+        margin-left: 400px;
+    }
+    pre{
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+           <div>
+               <img src="img/logo.png" alt="logo" width="300px">
+           </div>
+           <div class="botonera">
+               <a href="destinos.html">DESTINOS</a>
+               <a href="FAQ.html">FAQ</a>
+               <a href="index.html">PÁGINA PRINCIPAL</a>
+           </div>
+       </nav>
+   </header>
+    <form method="get" action="gracias.html">
+        <h1>Ingrese sus datos: </h1>
+        <label for="nombre"> Nombre: </label> <input type="text" name="nombre" placeholder="Ingrese su nombre">
+        <label for="apellido"> Apellido: </label> <input type="text"name="apellido" placeholder="Ingrese su apellido">
+        <label for="edad"> Edad: </label> <input type="number" name="edad"placeholder="Ingrese su edad">
+        <label for="email"> Email: </label> <input type="email" name="email" placeholder="Ingrese su email">
+        <label for="tel"> Teléfono: </label> <input type ="tel" name="tel" placeholder="Ingrese su teléfono">
+        <label for="ccn">Número Tarjeta de Crédito:</label> <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"  autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+        <label for="DNI">DNI: </label><input type="number" name="DNI" placeholder="Ingrese su DNI" maxlength="8">
+        <label for="date">Fecha de salida: </label> <input type="date" name="date">
+        <label for="date">Fecha de regreso: </label> <input type="date" name="date">
+        <p>Comentarios:</p>
+        <textarea name="respuesta" row="15" cols="25" placeholder="Deje su comentario (255 caracteres)" maxlength="255"></textarea>
+        <p><input type="submit" value= "enviar"></p>
+    </form>
+    <footer>
+        <pre>
+    
+         © Expedia 2024
+            All rights reserved.
+    
+        </pre>
+    </footer>
+</body>
+</html>
